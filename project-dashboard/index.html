@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>List of Projects</title>
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
+</head>
+
+<body ng-app="myApp" ng-controller="myController">
+
+    <div class="controls-sort">
+        <span>Sort By:</span>
+        <span>Last Modified Time <button ng-click="toggle2 = !toggle2; sortByLastModifiedTime()"><i
+                    ng-class="toggle2 ? 'fa fa-sort-asc' : 'fa fa-sort-desc'"></i></button></span>
+        <span>Name <button ng-click="toggle1 = !toggle1; sortByName()"><i
+                    ng-class="toggle1 ? 'fa fa-sort-asc' : 'fa fa-sort-desc'"></i></button></span>
+        <span>Created Time <button ng-click="toggle3 = !toggle3; sortByCreatedTime();"><i
+                    ng-class="toggle3 ? 'fa fa-sort-asc' : 'fa fa-sort-desc'"></i></button></span>
+
+        <input type="text" name="searchkey" id="searchkey" ng-model="searchkey.Name"
+            placeholder="Type to search project">
+
+        <span><button ng-click="addProject()">Add Project</button></span>
+
+    </div>
+
+    <div class="project-list">
+
+        <div ng-right-click my-index-del="{{ $index }}" my-index-proj="foo" class="project"
+            ng-repeat="project in projects | filter : searchkey" ng-right-click>
+            <div class="inline-project" my-context-menu>
+                <span>Name: {{ project.Name }}</span><br>
+                <span>Created By: {{ project["Created By"] }}</span><br>
+                <span>Last Modified By: {{ project["Last Modified By"] }}</span><br>
+                <span>Created Time: {{ project["Created Time"] | formatdate }} &nbsp; {{ project["Created Time"] | formattime }}</span><br>
+                <span>Last Modified Time: {{ project["Last Modified Time"] | formatdate }} &nbsp; {{ project["Created Time"] | formattime }}</span><br>
+                <span>Description: {{ project["Description"] }}</span>
+            </div>
+        </div>
+
+        <div class="menu">
+            <ul class="menu-options">
+                <li class="menu-option" ng-click="delProject()">Delete</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+
+            <div class="add-project-row">
+                <label for="name">Name</label>
+                <input id="pname" ng-model="projectname" type="text" name="projectname" id="name">
+            </div>
+
+            <div class="add-project-row">
+                <label for="createdby">Your name:</label>
+                <input id="createdby" ng-model="createdbyname" type="text" name="createdbyname" id="createdby">
+            </div>
+
+            <div class="add-project-row">
+                <label for="description">Description:</label>
+                <input id="pdesc" ng-model="projectdesc" type="text" name="projectdesc" id="description">
+            </div>
+
+            <div class="add-project-row">
+                <button class="add-project-btn" ng-click="addProjectToList()">Add</button>
+                <button class="close-btn" ng-click="closeModal()">Cancel</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="modalAlert" class="modal">
+        <div class="modal-content">
+            <div class="add-project-row">
+                <p class="add-proj-success" ng-bind="addProjError"></p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/scripts/angular.min.js"></script>
+    <!-- <script src="assets/scripts/main.js"></script> -->
+    <script src="assets/scripts/kDate.js"></script>
+    <script src="assets/scripts/main-test.js"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> -->
+
+
+
+</body>
+
+</html>
