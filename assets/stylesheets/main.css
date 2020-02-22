@@ -1,0 +1,245 @@
+#sample-photo {}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Custom CSS */
+
+* {
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header,
+main,
+footer {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    padding-top: 32px;
+    background-color: #05386B;
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Personal Brand */
+h1.brand {
+    grid-column: 1 / 2;
+    display: inline-block;
+}
+
+/* Nav */
+nav {
+    grid-column: 2 / 5;
+    display: inline-block;
+}
+
+nav p {
+    text-align: right;
+    margin-right: 20px;
+}
+
+nav a,
+.brand a {
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+    padding-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Main Section */
+main {
+    padding-top: 32px;
+    color: #05386B;
+    font-weight: 400;
+}
+
+div#about {
+    margin: 0 auto;
+    width: 70%;
+}
+
+/* Little room */
+div#projects {
+    margin: 0 auto;
+    width: 70%;
+}
+
+h1,
+p,
+#social,
+h3,
+.profile-pic {
+    padding-bottom: 32px;
+    line-height: 1.5;
+}
+
+/* Footer */
+footer {
+    padding-top: 32px;
+    background-color: #05386B;
+    color: white;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+/* Display pic */
+.profile-pic {
+    text-align: center;
+}
+
+#display-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 4px solid #5CDB95;
+}
+
+.icons {
+    color: #5CDB95;
+}
+
+#social i {
+    font-size: 22px;
+    padding-left: 30px;
+}
