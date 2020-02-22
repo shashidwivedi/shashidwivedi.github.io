@@ -156,29 +156,15 @@ header {
     background-color: #05386B;
     position: sticky;
     top: 0;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
-
-/* Personal Brand */
-h1.brand {
-    grid-column: 1 / 2;
-    display: inline-block;
 }
 
 /* Nav */
 nav {
-    grid-column: 2 / 5;
-    display: inline-block;
-}
-
-nav p {
     text-align: right;
     margin-right: 20px;
 }
 
-nav a,
-.brand a {
+nav a {
     font-size: 22px;
     text-decoration: none;
     color: white;
