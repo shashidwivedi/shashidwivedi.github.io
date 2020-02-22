@@ -161,7 +161,7 @@ header {
 /* Nav */
 nav {
     text-align: right;
-    margin-right: 20px;
+    padding-right: 20px;
 }
 
 nav a {
@@ -190,6 +190,7 @@ div#projects {
     width: 70%;
 }
 
+nav,
 h1,
 p,
 #social,
