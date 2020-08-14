@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    font-size: 1.2rem;
 }
 
 *, *::before, *::after {
@@ -10,3 +11,14 @@ html {
     width: 168px;
 }
 
+a {
+    text-decoration: none;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin-right: 20px;
+}
