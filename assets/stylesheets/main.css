@@ -64,7 +64,7 @@ a {
     text-align: center;
     position: relative;
 
-    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 88vh, 0 100%);
 }
 
 .about-main {
@@ -85,7 +85,7 @@ a {
 
 .projects {
     height: 95vh;
-    color: #000;
+    color: #5d432c;
     text-align: center;
     padding: 40px;
 }
@@ -99,7 +99,7 @@ a {
     text-align: center;
     position: relative;
     
-    clip-path: polygon(0 0, 100% 15vh, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 7vh, 100% 100%, 0 100%);
 }
 
 .contacts-main {
