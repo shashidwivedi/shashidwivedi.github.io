@@ -10,25 +10,87 @@
 
 html {
     box-sizing: border-box;
-    font-size: 1.2rem;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
     box-sizing: inherit;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    background-color: #fff;
+    color: #777;
+}
+
 #display-pic {
-    width: 168px;
+    height: 172px;
 }
 
 a {
     text-decoration: none;
 }
 
-nav {
-    margin-bottom: 20px;
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0 40px;
+    background-color: #ff3800;
 }
 
-nav a {
-    margin-right: 20px;
+.header h1 a {
+    color: #fff;
+    font-weight: 900;
+}
+
+.header nav a {
+    margin-left: 20px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.about {
+    height: 95vh;
+    background-image: linear-gradient(to right bottom,
+            rgba(220, 215, 160, 0.8),
+            rgba(93, 67, 44, 0.4));
+    /* background-image: linear-gradient(
+    to right bottom,
+    rgba(255, 166, 0, 0.8),
+    rgba(255, 166, 0, 0.815)); */
+    /* color: #5d432c; */
+    color: #000;
+    text-align: center;
+    position: relative;
+
+    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+}
+
+.about-main {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about .heading {
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+@media screen and (min-width: 601px) {
+    .about .heading {
+        font-size: 2em;
+    }
+}
+
+.about .profile-pic img {
+    border-radius: 50%;
 }
