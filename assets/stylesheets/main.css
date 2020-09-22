@@ -64,7 +64,7 @@ a {
     text-align: center;
     position: relative;
 
-    clip-path: polygon(0 0, 100% 0, 100% 88vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
 }
 
 .about-main {
@@ -85,7 +85,9 @@ a {
 
 .projects {
     height: 95vh;
-    color: #5d432c;
+    background-color: #fff;
+    /* color: #5d432c; */
+    color: #000;
     text-align: center;
     padding: 40px;
 }
@@ -99,7 +101,7 @@ a {
     text-align: center;
     position: relative;
     
-    clip-path: polygon(0 0, 100% 7vh, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 10vh, 100% 100%, 0 100%);
 }
 
 .contacts-main {
@@ -112,8 +114,9 @@ a {
 .footer {
     display: block;
     padding: 40px;
-    background-color: #ff3800;
-    color: #fff;
+    /* background-color: #ff3800;
+    color: #fff; */
+    color: #000;
     font-weight: 700;
     text-align: center;
 }
