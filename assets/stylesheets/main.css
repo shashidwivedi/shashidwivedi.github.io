@@ -1,11 +1,18 @@
 /* Colors
-    Coquelicot Red: #ff3800
+    Coquelicot Red: #d53e23
+    Atlantic magazine: #d53e23
     
     Sappling Tan: #dcd7a0
+    Atlantic magazine color: #d8d1c8
     
     Walnut Brown: #5d432c
     
     Bright Orange: #FFA500
+    Atlantic magazine color: #c99c25
+    
+    Black: #0b0b0b
+    
+    
 */
 
 html {
@@ -25,8 +32,8 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
-    /* background-color: #fff; */
-    background-color: #FFA500;
+    /* background-color: #d8d1c8; */
+    background-color: #c99c25;
     color: #777;
 }
 
@@ -41,26 +48,24 @@ a {
 .header {
     display: block;
     padding: 0 40px;
-    background-color: #ff3800;
+    background-color: #d53e23;
 }
 
 .header h1 a {
-    color: #fff;
+    color: #d8d1c8;
     font-weight: 900;
 }
 
 .header nav a {
     margin-left: 40px;
-    color: #fff;
+    color: #d8d1c8;
     font-weight: 700;
 }
 
 .about {
     height: 95vh;
-    background-image: linear-gradient(to right bottom,
-            rgba(220, 215, 160),
-            rgba(220, 215, 160, 0.8));
-    color: #000;
+    background-color: #d8d1c8;
+    color: #0b0b0b;
     text-align: center;
     position: relative;
 
@@ -85,19 +90,17 @@ a {
 
 .projects {
     height: 95vh;
-    background-color: #fff;
+    background-color: #d8d1c8;
     /* color: #5d432c; */
-    color: #000;
+    color: #0b0b0b;
     text-align: center;
     padding: 40px;
 }
 
 .contacts {
     height: 95vh;
-    background-image: linear-gradient(to right bottom,
-            rgba(220, 215, 160),
-            rgba(220, 215, 160, 0.8));
-    color: #000;
+    background: #d8d1c8;
+    color: #0b0b0b;
     text-align: center;
     position: relative;
     
@@ -114,9 +117,7 @@ a {
 .footer {
     display: block;
     padding: 40px;
-    /* background-color: #ff3800;
-    color: #fff; */
-    color: #000;
+    color: #0b0b0b;
     font-weight: 700;
     text-align: center;
 }
