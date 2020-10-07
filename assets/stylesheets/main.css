@@ -10,6 +10,9 @@
     Bright Orange: #FFA500
     Atlantic magazine color: #c99c25
     
+    Shade of Yellow: #fbac29
+    Shade of Brown: #4d352d
+    
     Black: #0b0b0b
     
     
@@ -32,9 +35,9 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
-    /* background-color: #d8d1c8; */
-    background-color: #c99c25;
-    color: #777;
+    /* background-color: #4d352d; */
+    background-color: #fbac29;
+    color: #222;
 }
 
 #display-pic {
@@ -52,19 +55,19 @@ a {
 }
 
 .header h1 a {
-    color: #d8d1c8;
+    color: #fff;
     font-weight: 900;
 }
 
 .header nav a {
     margin-left: 40px;
-    color: #d8d1c8;
+    color: #fff;
     font-weight: 700;
 }
 
 .about {
     height: 95vh;
-    background-color: #d8d1c8;
+    background-color: #fff;
     color: #0b0b0b;
     text-align: center;
     position: relative;
@@ -90,7 +93,7 @@ a {
 
 .projects {
     height: 95vh;
-    background-color: #d8d1c8;
+    background-color: #fff;
     /* color: #5d432c; */
     color: #0b0b0b;
     text-align: center;
@@ -99,7 +102,7 @@ a {
 
 .contacts {
     height: 95vh;
-    background: #d8d1c8;
+    background: #fff;
     color: #0b0b0b;
     text-align: center;
     position: relative;
@@ -117,7 +120,7 @@ a {
 .footer {
     display: block;
     padding: 40px;
-    color: #0b0b0b;
+    color: #222;
     font-weight: 700;
     text-align: center;
 }
