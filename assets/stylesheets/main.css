@@ -215,7 +215,7 @@ body {
 
 .social a {
 	font-size: 48px;
-	padding-left: 100px;
+	padding-left: 120px;
 	text-decoration: none;
 	color: black;
 }
@@ -280,6 +280,11 @@ body {
 	.heading p {
 		font-size: 22px;
 		font-weight: 200;
+	}
+	
+	/* Contacts  */
+	.social a {
+		padding-left: 48px;
 	}
 	
 	/* Footer  */
