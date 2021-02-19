@@ -17,15 +17,29 @@
 </head>
 
 <body>
-    <header class="header grid">
-        <h1 class="header-main col-1-2"><a href="index.html">Home</a></h1>
-        <nav class="nav col-1-2">
-            <ul class="nav-list">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="menu grid">
+            <h1 class="header-main col-1-2"><a href="index.html">Home</a></h1>
+            <nav class="nav col-1-2">
+                <ul class="nav-list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu menu-mobile flex-column">
+            <button class="menu-btn menu-btn-open"><i class="fas fa-bars"></i></button>
+            <button class="menu-btn menu-btn-close hidden"><i class="fas fa-window-close"></i></button>
+            <nav class="nav-mobile flex-column hidden">
+                <ul class="nav-list-mobile">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main class="about" id="about">
@@ -63,6 +77,8 @@
         <p>Made with <i class="fas fa-heart icons"></i> & <i class="fas fa-coffee icons"></i> (Read Tea! 😁)<br>&copy;
             Shashi</p>
     </footer>
+
+    <script src="./assets/scripts/main.js"></script>
 </body>
 
 </html>
