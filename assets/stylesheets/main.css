@@ -106,14 +106,6 @@ body {
 	background-color: crimson;
 }
 
-.header-main {
-	width: auto;
-}
-
-.nav {
-	width: auto;
-}
-
 .nav-list {
 	display: flex;
 	justify-content: space-between;
@@ -167,9 +159,9 @@ body {
 
 .heading {
 	position: absolute;
-	top: 60%;
+	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -60%);
+	transform: translate(-50%, -50%);
 	text-align: center;
 }
 
