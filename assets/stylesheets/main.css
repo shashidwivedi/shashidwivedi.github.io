@@ -1,4 +1,3 @@
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -58,68 +57,51 @@ body {
     background: #eee;
     color: #000;
     font: 400 16px/22px 'Poppins', sans-serif;
-		overflow-x: hidden;
+		padding: 0;
+		margin: 0;
 }
-
-/*
-  ==================================================================
-  Grid
-  ==================================================================
-*/
-
-*, *:before, *:after {
-	box-sizing: border-box;
-}
-
-.grid {
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
-}
-
-.col-1-2 {
-	width: 47.5%;
-}
-
-.col-1-3 {
-	width: 30%;
-}
-
-.col-2-3 {
-	width: 63.3333%;
-}
-
 
 /*
   ==================================================================
   Header
   ==================================================================
 */
-
 .header {
 	width: 100%;
-	position: fixed;
+	position: sticky;
 	z-index: 100;
 	align-items: center;
-	padding: 0 36px;
-	font-size: 22px;
+	margin: 0;
+	padding: 0;
+	font-size: 1.5rem;
 	background-color: crimson;
 }
 
-.nav-list {
-	display: flex;
-	justify-content: space-between;
-	align-items: stretch;
+.header h1 {
+	text-align: center;
 }
 
-.nav li {
-	margin-left: 48px;
+.nav {
+	padding: 0 48px;
+}
+
+.nav ul {
+	margin-left: auto;
+	display: flex;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+}
+
+.nav ul li {
+	padding-left: 56px;
+}
+
+.nav a {
+	height: 50px;
+	line-height: 50px;
 }
 
 .header a {
-	display: inline-block;
-	height: 50px;
-	line-height: 50px;
 	text-decoration: none;
 	color: #eee;
 	transition: all .2s ease;
@@ -129,89 +111,76 @@ body {
 	color: black;
 }
 
-.menu-mobile {
-	display: none;
-}
 
+/*
+  ==================================================================
+  Profile photo
+  ==================================================================
+*/
+.profile-pic img {
+
+	width: 200px;
+	border-radius: 50%;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
 
 /*
   ==================================================================
   About
   ==================================================================
 */
-
 .about {
-	position: relative;
-	height: 100vh;
+	height: 95vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-image: linear-gradient(to top right, #434343 0%, black 100%);
-}
-
-.profile-pic {
-	text-align: center;
-}
-
-.profile-pic img {
-	width: 200px;
-	border-radius: 50%;
-	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-
-.heading {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-}
-
-.heading h2 {
-	font-size: 64px;
-	margin-bottom: 30px;
-	color: #eee;
-	font-weight: 700;
-	line-height: 1.25;
-}
-
-.heading p {
-	font-size: 28px;
-	font-weight: 300;
-	line-height: 1.5;
-	font-style: italic;
 	color: #fff;
+	text-align: center;
+	font-size: 2rem;
+	line-height: 1.625;
+	letter-spacing: 2px;
+	font-style: italic;
+	font-weight: 200;
 }
 
+.intro {
+	padding: 48px;
+}
+
+.intro h2 {
+	margin-bottom: 24px;
+}
 
 /*
   ==================================================================
-  Project
+  Projects
   ==================================================================
 */
 
 .projects {
-	height: 100vh;
+	padding: 48px;
 }
-
 
 /*
   ==================================================================
-  Contacts
+  Contact
   ==================================================================
 */
-
-.contacts {
-	padding: 40px 24px;
+.contact {
+	padding: 48px;
 	text-align: center;
 	line-height: 1.625;
 	border-top: 4px solid crimson;
 }
 
-.contacts-main h3 {
+.contact p {
 	margin-bottom: 30px;
 }
 
 .social a {
-	font-size: 48px;
-	padding-left: 120px;
+	font-size: 3rem;
+	padding-left: 48px;
 	text-decoration: none;
 	color: black;
 }
@@ -219,7 +188,6 @@ body {
 .social a:first-child {
 	padding-left: 0;
 }
-
 
 /*
   ==================================================================
@@ -231,121 +199,11 @@ body {
 	background-image: linear-gradient(to top right, #434343 0%, black 100%);
 	color: #fff;
 	text-align: center;
-	padding: 24px;
+	padding: 48px;
 	font-weight: 200;
 	line-height: 1.625;
 }
 
 .footer .icons {
 	color: crimson;
-}
-
-
-/*
-  ==================================================================
-  Media Queries - Not mobile-first
-  ==================================================================
-*/
-
-@media (max-width:600px) {
-	/* Body  */
-	body {
-		font: 400 14px/20px 'Poppins', sans-serif;
-	}
-	
-	/* Header  */
-	.header {
-		display: block;
-		font-size: 18px;
-	}
-	
-	.nav li {
-		margin-left: 10px;
-	}
-	
-	.nav li:first-child {
-		margin-left: 0;
-	}
-	
-	/* About  */
-	.heading h2 {
-		font-size: 48px;
-		font-weight: 500;
-	}
-	
-	.heading p {
-		font-size: 22px;
-		font-weight: 200;
-	}
-	
-	/* Contacts  */
-	.social a {
-		padding-left: 48px;
-	}
-	
-	/* Footer  */
-	.footer {
-		font-weight: 200;
-		font-size: 12px;
-	}
-	
-}
-
-@media (max-width:480px) {
-	
-	/* About  */
-	.heading {
-		width: 100%;
-		padding: 40px;
-	}
-	
-	.heading h2 {
-		font-size: 32px;
-	}
-	
-	/* Resonsive Nav Menu  */
-	.menu {
-		display: none;
-	}
-	
-	.menu-mobile {
-		display: block;
-	}
-	
-	.hidden {
-		display: none;
-	}
-	
-	.header {
-		padding: 0;
-		background-color: transparent;
-	}
-	
-	.menu-btn {
-		position: absolute;
-		top: 30px;
-		right: 30px;
-	}
-	
-	.nav-mobile {
-		height: 100vh;
-		width: 100%;
-		background: rgb(220, 20, 60, 0.90);
-	}
-	
-	.nav-list-mobile {
-		display: flex;
-		flex-direction: column;
-		/* position: relative; */
-		height: 100vh;
-		justify-content: center;
-		align-items: center;
-		font-size: 48px;
-		line-height: 2;
-	}
-	
-	.nav-list-mobile a {
-		color: white;
-	}
-	
 }
