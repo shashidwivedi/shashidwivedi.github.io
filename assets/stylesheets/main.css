@@ -54,11 +54,11 @@ table {
 */
 
 body {
-    background: #eee;
-    color: #111;
-    font: 400 16px/22px 'Poppins', sans-serif;
-		padding: 0;
-		margin: 0;
+	background: #f6f6f6;
+	color: #2c2c2c;
+	font: 400 16px/22px 'Poppins', sans-serif;
+	padding: 0;
+	margin: 0;
 }
 
 /*
@@ -67,43 +67,56 @@ body {
   ==================================================================
 */
 .header {
-	width: 100%;
-	position: fixed;
 	background-color: crimson;
+	position: sticky;
+	top: 0;
+	padding: 0 60px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	box-shadow: 0 2px 4px rgb(0 0 0 / 20%), 0 4px 12px rgb(0 0 0 / 20%);
+}
+
+.author {
+	font-size: 22px;
+	color: #fff;
+	margin: 24px 0;
+	font-weight: 500;
+	transition: all .2s ease-out;
+}
+
+.author:hover {
+	color: #dfdfdf;
 }
 
 .nav ul {
 	display: flex;
+	flex-direction: row;
 	justify-content: flex-end;
+	align-items: center;
 	flex-wrap: wrap;
+	margin: 12px 0;
 }
 
 .nav ul li {
-	padding: 0.8rem 1.5rem;
+	margin-left: 22px;
+}
+
+.nav ul li:first-child {
+	margin-left: 0;
 }
 
 .nav a {
-	color: #eee;
-	font-size: 1.5rem;
-	font-weight: 500px;
+	color: #fff;
+	font-weight: 500;
 	text-decoration: none;
-	transition: all .2s ease;
+	transition: all .2s ease-out;
 }
 
 .nav a:hover {
-	color: #111;
-}
-
-/*
-  ==================================================================
-  Profile photo
-  ==================================================================
-*/
-.profile-pic img {
-
-	width: 200px;
-	border-radius: 50%;
-	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	color: #dfdfdf;
 }
 
 /*
@@ -111,27 +124,11 @@ body {
   About
   ==================================================================
 */
+
 .about {
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #111;
-	color: #eee;
-	text-align: center;
-	font-size: 2rem;
-	line-height: 1.6;
-	font-style: italic;
-	font-weight: 200;
+	margin-top: 200px;
 }
 
-.intro {
-	padding: 60px 48px 0;
-}
-
-.intro h2 {
-	margin-bottom: 24px;
-}
 
 /*
   ==================================================================
@@ -139,9 +136,7 @@ body {
   ==================================================================
 */
 
-.projects {
-	padding: 60px 48px;
-}
+
 
 /*
   ==================================================================
@@ -149,34 +144,44 @@ body {
   ==================================================================
 */
 .contact {
-	border-top: 4px solid crimson;
-	padding: 60px 48px;
-	line-height: 1.6;
+	border-top: 2px solid crimson;
+	padding: 24px 60px;
 	text-align: center;
 }
 
-.contact p {
-	margin-bottom: 48px;
+.contact h2 {
+	margin-bottom: 24px;
 }
 
 .social ul {
 	list-style: none;
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .social ul li {
-	padding: 0.8rem 1.5rem;
+	padding: 0;
+	margin: 12px 22px;
 }
 
 .social a {
 	font-size: 1.5rem;
 	text-decoration: none;
 	color: #111;
+	transition: all .2s ease-out;
+	border: 2px solid black;
+	border-radius: 50%;
+	height: 48px;
+	width: 48px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .social a:hover {
 	color: crimson;
+	border: 2px solid crimson;
 }
 
 /*
@@ -189,9 +194,12 @@ body {
 	background-color: #111;
 	color: #fff;
 	text-align: center;
-	padding: 60px 48px;
+	padding: 24px 60px;
 	font-weight: 200;
-	line-height: 1.6;
+}
+
+.footer p {
+	margin-bottom: 22px;
 }
 
 .footer .icons {
